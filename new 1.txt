@@ -1,0 +1,33 @@
+
+
+//数据库操作
+（1）查询，显示
+
+show databases;
+
+（2）创建数据库
+
+直接创建（如果已存在该数据库，报错）
+create database 我的数据库名称 character set utf8mb4;
+
+如果没有 才创建（if 数据库不存在 创建）
+create database if no exists 数据库名称 character set utf8mb4;
+
+（3）删除
+
+如果已不存在该数据库，报错
+drop database 数据库名称;
+
+如果已存在该数据库，删除
+drop database if exists 数据库名称;
+
+（4）使用数据库  （出现No database selected 要先进入数据库，也就是先使用） select * from test.t`
+use 数据库名称;
+
+
+数据类型
+	1.数值型
+		整型
+		浮点型
+	2.字符串类型
+	3.日期类型
